@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        div.scrollmenu {
+            background-color: #333;
+            overflow: auto;
+            white-space: nowrap;
+        }
+
+        div.scrollmenu a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px;
+            text-decoration: none;
+        }
+
+        div.scrollmenu a:hover {
+            background-color: #777;
+        }
+
+        div.scrollmenu1 {
+            background-color: #333;
+            overflow: auto;
+            white-space: nowrap;
+        }
+
+        div.scrollmenu a {
+            display: inline-block;
+            color: white;
+            text-align: bottom;
+            padding: 56px;
+            text-decoration: none;
+        }
+
+        div.scrollmenu a:hover {
+            background-color: #777;
+        }
+
+        h5 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+            font-size: 30px;
+            color: rgb(255, 255, 255);
+            font-style: oblique;
+            position: absolute;
+            top: 20%;
+            left: 63%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 1000px;
+            z-index: 999;
+            text-align: left;
+            padding: 60px 32px;
+            box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.75);
+        }
+        p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+            font-size: 28px;
+            color: rgb(255, 255, 255);
+            font-style: oblique;
+            position: absolute;
+            top: 78%;
+            left: 63%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 1000px;
+            z-index: 999;
+            text-align: left;
+            padding: 60px 32px;
+            box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.75);
+        }
+        h4{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+            font-size: 30px;
+            color: rgb(255, 255, 255);
+            font-style: oblique;
+            position: absolute;
+            top: 135%;
+            left: 63%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 1000px;
+            z-index: 999;
+            text-align: left;
+            padding: 60px 32px;
+            box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.75);
+        }
+        h6{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+            font-style: oblique;
+            position: absolute;
+            top: 36cm;
+            left: 63%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 1000px;
+            z-index: 999;
+            text-align: left;
+            padding: 60px 32px;
+            box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.75);
+        }
+        h3{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+            font-style: oblique;
+            position: absolute;
+            top: 46cm;
+            left: 63%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 1000px;
+            z-index: 999;
+            text-align: left;
+            padding: 60px 32px;
+            box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.75);
+        }
+        h2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+            font-style: oblique;
+            position: absolute;
+            top: 57cm;
+            left: 63%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 1000px;
+            z-index: 999;
+            text-align: left;
+            padding: 60px 32px;
+            box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.75);
+        }
+
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            height: 50px;
+            line-height: 50px;
+            background-color: rgba(87, 85, 85, 0.258);
+            font-family: 'calibri';
+            font-size: 36px;
+        }
+
+        li {
+            float: left;
+            border-right: solid;
+            color: white;
+            border-radius: 100px;
+            border-color: white;
+        }
+
+        a {
+            display: inline;
+            padding: 0 50px;
+            color: white;
+            text-decoration: none;
+
+        }
+
+
+
+        h1 {
+            display: grid;
+            justify-content: center;
+            color: black;
+            background-color: aqua;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">Aboutus</a></li>
+
+    </ul>
+    <div class="scrollmenu" width="320" height="280">
+        <a href="/doc"><img src="{{url_for('static', filename='doctor.jpg')}}" width="320px" height="280px"></a>
+        <h5>Doctor Strange in the Multiverse of Madness is a 2022 American superhero <br>
+             film based on Marvel Comics featuring the character Doctor Strange.</h5><br>
+        <a href="/grey"><img src="{{url_for('static', filename='landscape.jpg')}}" width="320" height="280"></a><br>
+        <p>When the CIA's most skilled operative-whose true identity is known to none-accidentally<br>
+             uncovers dark agency secrets,a psychopathic former colleague puts a bounty on his head,<br>
+              setting off a global manhunt by international assassins..</p><br>
+        <a href="/justice"> <img src="{{url_for('static', filename='unnamed.jpg')}}" width="320" height="280"></a><br>
+        <h4>Zack Snyder's Justice League (colloquially referred to as the Snyder Cut) is the <br>
+            2021 director's cut of the 2017 American superhero film Justice League</h4>
+        <a href="/liger"><img src="{{url_for('static', filename='liger.jpg')}}" width="320" height="280"></a><br>
+        <h6>Liger is an upcoming Indian sports action film written and directed by Puri Jagannadh.<br>
+             Shot simultaneously in Hindi and Telugu languages,the film is produced by Dharma Productions and Puri Connects.</h6>
+        <a href="/vikram"><img src="{{url_for('static', filename='vikram.jpg')}}" width="320" height="280"></a><br>
+        <h3>Vikram is a 2022 Indian Tamil-language action thriller film written and directed by Lokesh Kanagaraj, <br>
+            produced by Raaj Kamal Films International. The film stars Kamal Haasan, Vijay Sethupathi and Fahadh Faasil.</h3>
+        <a href="/john"> <img src="{{url_for('static', filename='john.jpg')}}" width="320" height="280"></a><br>
+        <h2>John Wick: Chapter 4(simply known as John Wick 4, or JW4) is an upcoming American neo-noir action<br>
+             thriller film which is serving as the direct sequel to 2019's John Wick: Chapter 3 Parabellum, as well as <br>
+             the fourth installment in the John Wick film series</h2>
+        ...
+    </div>
+</body>
+
+</html>

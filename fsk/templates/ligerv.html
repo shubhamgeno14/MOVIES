@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        img {
+            background: grey;
+            height: 200vh;
+
+        }
+
+        body:after {
+            position: absolute;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            height: 50px;
+            line-height: 50px;
+            background-color: rgba(128, 128, 128, 0.712);
+            font-family: 'calibri';
+            font-size: 36px;
+        }
+
+        li {
+            float: left;
+            border-right: solid;
+            color: white;
+            border-radius: 100px;
+            border-color: white;
+        }
+
+        a {
+            display: inline;
+            padding: 0 50px;
+            color: white;
+            text-decoration: none;
+
+        }
+
+        a:hover {
+            background-color: rgba(227, 214, 62, 0.741);
+            height: 50px;
+            border-radius: 50px
+        }
+
+
+        .content {
+            position: absolute;
+            top: 100%;
+            left: 60%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 1500px;
+            height: 1200px;
+            z-index: 999;
+            text-align: center;
+            padding: 60px 32px;
+            background: rgba(0, 0, 0, 0.727);
+            box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.75);
+        }
+
+        .content header {
+            color: whitesmoke;
+            font-size: 50px;
+            font-weight: 1000;
+            margin: 0 0 35px 0;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .field {
+            position: relative;
+            height: 45px;
+            width: 100%;
+            display: flex;
+            background: rgba(255, 255, 255, 0.04);
+            ;
+
+        }
+
+        .field input {
+            height: 100%;
+            width: 100%;
+            background: transparent;
+            border: none;
+            outline: none;
+            color: whitesmoke;
+            font-size: 16px;
+            font-family: 'poppins', sans-serif;
+
+
+        }
+
+        .space {
+            margin-top: 16px;
+        }
+
+        input[type="submit"] {
+            background: blue;
+            border: 1px solid #2691d9;
+            color: rgb(0, 0, 0);
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background: #2691d9;
+        }
+
+        .signup {
+            color: grey;
+            font-size: 15px;
+            margin-top: 10px;
+        }
+
+        .signup a {
+            color: #3498db;
+            text-decoration: none;
+
+        }
+
+        table {
+            margin: 0;
+            padding: 0;
+            top: 10cm;
+            font-size: 30px;
+            font-style: oblique;
+            color: white;
+        }
+        textarea{
+            top:20px;
+            left: 1000px;
+            background:transparent;
+            color: white;
+            font-size: 30px;
+            font-style: oblique;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticketsonline</title>
+</head>
+
+<body>
+    <link rel="stylesheet" href="../static/style4.css">
+    <div class="content">
+        <header>Liger Saala crossbreed</header>
+        <form action="/show_liger" method="post">
+            <table>
+                <thead>
+                    <tr>
+                        
+                        <td>REVIEW</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    {%for i in lig%}
+                    <tr>
+                        <tr>
+                        <td>{{i[0]}}</td>
+                        </tr>
+                        <td><textarea cols="60">{{i[1]}}</textarea></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+    </form>
+    </div>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/aboutus">Aboutus</a></li>
+        <li><a href="/liger">Review</a> </li>
+    </ul>
+</body>
+
+</html>

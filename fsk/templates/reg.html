@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+
+        body:after {
+            position: absolute;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            height: 50px;
+            line-height: 50px;
+            background-color: rgba(87, 85, 85, 0.258);
+            font-family: 'calibri';
+            font-size: 36px;
+        }
+
+        li {
+            float: left;
+            border-right: solid;
+            color: white;
+            border-radius: 100px;
+            border-color: white;
+        }
+
+        a {
+            display: inline;
+            padding: 0 50px;
+            color: white;
+            text-decoration: none;
+
+        }
+
+        a:hover {
+            background-color: rgba(227, 214, 62, 0.741);
+            height: 50px;
+            border-radius: 50px
+        }
+
+
+        .content {
+            position: absolute;
+            top: 54%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 370px;
+            z-index: 999;
+            text-align: center;
+            padding: 60px 32px;
+            background: rgba(1, 0, 0, 0.663);
+            box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.75);
+        }
+
+        .content header {
+            color: white;
+            font-size: 30px;
+            font-weight: 600;
+            margin: 0 0 35px 0;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .field {
+            position: relative;
+            height: 45px;
+            width: 100%;
+            display: flex;
+            background: rgba(255, 255, 255, 0.04);
+
+        }
+
+        .field input {
+            height: 100%;
+            width: 100%;
+            background: transparent;
+            border: none;
+            outline: none;
+            color: white;
+            font-size: 16px;
+            font-family: 'poppins', sans-serif;
+
+
+        }
+
+        .space {
+            margin-top: 16px;
+        }
+
+        input[type="submit"] {
+            background: blue;
+            border: 1px solid #2691d9;
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background: #2691d9;
+        }
+
+        .signup {
+            color: white;
+            font-size: 15px;
+            margin-top: 10px;
+        }
+
+        .signup a {
+            color: rgb(23, 6, 252);
+            text-decoration: none;
+
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticketsonline</title>
+
+</head>
+
+<body>
+    <link rel="stylesheet" href="../static/styler.css">
+    <div class="bg.img">
+        <div class="content">
+            <header>Signup Form</header>
+            <form action="insert_data" method="post">
+
+                <div class="field space">
+                    <span></span>
+                    <input type="text" name="name" placeholder="Enter your name">
+                </div>
+                <div class="field space">
+                    <span></span>
+                    <input type="email" name="email" placeholder="Enter your email">
+                </div>
+                <div class="field space">
+                    <span></span>
+                    <input type="text" name="age" placeholder="Enter your age">
+                </div>
+                <div class="field space">
+                    <span></span>
+                    <input type="text" name="phone" placeholder="Enter your number">
+                </div>
+                <div class="field space">
+                    <span></span>
+                    <input type="password" name="password" placeholder="password">
+                </div>
+                <div class="field space">
+                    <span></span>
+                    <input type="submit" value="Signup">
+                </div>
+                <div class="signup">If have account?
+                    <a href="/log">Login</a>
+
+                </div>
+            </form>
+        </div>
+    </div>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">Aboutus</a></li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>this is showdetails page</h1>
+    <table border="1px">
+        <thead>
+            <tr>
+                <td>name</td>
+                <td>phone</td>
+                <td>email</td>
+                <td>password</td>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in elist %}
+            <tr>
+               <td>{{i[0]}}</td>
+               <td>{{i[1]}}</td>
+               <td>{{i[2]}}</td>
+               <td>{{i[3]}}</td>    
+               <td><a href="/edit?email={{i[2]}}">edit</a></td>
+               <td><a href="/delete?email={{i[2]}}">delete</a></td> 
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+
+</html>
